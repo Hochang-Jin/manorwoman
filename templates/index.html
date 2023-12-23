@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=nom maximum-scale-1">
+    <title>남자니 여자니?</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+
+<body>
+    <h1>남자니 여자니?</h1>
+    <div class="result">
+	   캐릭터 이름
+    </div>
+    <form action="/result" method="post">
+	<div>
+        	<input type="text" name="name" placeholder="캐릭터 이름을 입력하세요">
+		<button type="submit">검색</button>
+	</div>
+	<div class="img_holder">
+		<img src={{img}} oneerror="this.style.display='none'" alt=""/>
+	</div>
+
+	  {%with messages = get_flashed_messages()%}
+	  {%if messages %}
+	    <script type="text/javascript">
+	          alert("{{messages[-1]}}");
+            </script>
+            {%endif%}
+          {%endwith%}
+    </form>
+</body>
+
+

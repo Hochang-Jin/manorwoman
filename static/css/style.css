@@ -1,0 +1,42 @@
+h1 {
+	text-align:center
+}
+
+.result {
+	text-align:center
+}
+input{
+	width:75%;
+}
+button{
+	width:20%;
+}
+
+div {
+	width:100%;
+}
+
+body{
+	width:100%;
+	height:100%;
+}
+
+.name{
+	width:100%;
+}
+
+img{
+	width:70%;
+}
+.img_holder{
+	text-align:center;
+}
+
+.center_div{
+	text-align:center;
+}
+
+.name_div{
+	font-size:3em;
+	color:#4D377B;
+}
